@@ -34,6 +34,9 @@ jobs:
   deploy:
     needs: build
 
+    permissions:
+      contents: write
+
     runs-on: ubuntu-latest
     steps:
       - name: Download artifact
